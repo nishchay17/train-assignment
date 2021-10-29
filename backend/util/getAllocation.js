@@ -18,7 +18,9 @@ exports.getAllocation = function (seats, numberOfSeats) {
     preRow = row;
     allocatedPosition.push(i + 1);
   }
-
+  if (allocatedPosition.length < numberOfSeats) {
+    allocatedPosition = [];
+  }
   for (
     let i = 0;
     i < seats.length && allocatedPosition.length < numberOfSeats;
