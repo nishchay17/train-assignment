@@ -1,6 +1,6 @@
 class Seats {
   static getAllSeats() {
-    return fetch("http://localhost:3000/api/reservation/all-seats")
+    return fetch(`${process.env.REACT_APP_BACKEND}reservation/all-seats`)
       .then((data) => {
         return data.json();
       })
@@ -9,7 +9,7 @@ class Seats {
       });
   }
   static reserveSeats(numberOfSeats) {
-    return fetch("http://localhost:3000/api/reservation/reserve", {
+    return fetch(`${process.env.REACT_APP_BACKEND}reservation/reserve`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -25,7 +25,7 @@ class Seats {
       });
   }
   static reset() {
-    return fetch("http://localhost:3000/api/reservation/reset")
+    return fetch(`${process.env.REACT_APP_BACKEND}reservation/reset`)
       .then((data) => {
         return data.json();
       })
