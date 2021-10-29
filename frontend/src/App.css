@@ -19,7 +19,7 @@
 .ml-2 {
   margin-left: 2rem;
 }
-.ml-3 {
+.ml-md-3 {
   margin-left: 3rem;
 }
 
@@ -58,6 +58,10 @@ input {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.switch {
+  flex-direction: row;
 }
 
 .seat-wrapper {
@@ -112,4 +116,24 @@ input {
 .loading:hover {
   transform: none;
   border: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .seat {
+    width: 2rem;
+    height: 2rem;
+  }
+  .switch {
+    flex-direction: column;
+  }
+  .ml-md-3 {
+    margin-left: 0rem;
+  }
+  .my-sm-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }

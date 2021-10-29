@@ -75,7 +75,7 @@ function App() {
     <div className="container mt-3">
       <h1>Train Reservation</h1>
       <p>D2C assignment</p>
-      <div className="flex mt-2">
+      <div className="flex mt-2 switch">
         <div className="seat-wrapper">
           {isLoading ? (
             <Loading />
@@ -91,7 +91,7 @@ function App() {
             ))
           )}
         </div>
-        <div className="ml-3">
+        <div className="ml-md-3 my-sm-2">
           <Status />
           <BookingForm
             handelSubmit={handelSubmit}
