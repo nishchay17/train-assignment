@@ -1,0 +1,115 @@
+.container {
+  max-width: 1500px;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+button {
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(114, 252, 194);
+}
+
+button:active {
+  background: rgba(114, 252, 194, 0.671);
+  transform: scale(0.97);
+}
+
+.btn-red {
+  background: rgb(245, 135, 135);
+}
+.btn-red:active {
+  background: rgba(255, 140, 140, 0.788);
+}
+
+input {
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.seat-wrapper {
+  width: fit-content;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.seat {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.seat:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+.unreserved {
+  background: rgb(243, 255, 239);
+  border: 1px solid black;
+}
+.reserved {
+  background: rgb(114, 252, 194);
+}
+
+@keyframes pulse {
+  0% {
+    background: rgb(253, 255, 237);
+  }
+
+  70% {
+    background: rgb(249, 253, 220);
+  }
+
+  100% {
+    background: rgb(247, 253, 196);
+  }
+}
+
+.loading {
+  background-color: bisque;
+  animation: pulse 2s infinite;
+}
+.loading:hover {
+  transform: none;
+  border: none;
+}
