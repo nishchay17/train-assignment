@@ -56,7 +56,7 @@ function App() {
     }
   }
   async function reset() {
-    const data = await Seats.reset();
+    await Seats.reset();
     setSeats((pre) => {
       const emptySeats = pre.map((d) => {
         d.isAvailable = true;
